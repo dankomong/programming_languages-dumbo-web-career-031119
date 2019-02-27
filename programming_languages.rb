@@ -9,7 +9,9 @@ def reformat_languages(languages)
       new_hash[spec][:style].push(type)
     end
   end
-  # for javascript, it will only push :oo so we will have to push :functional at the end
+  # for javascript, it will push :oo from the loop above so we will have to push :functional at the end
+  
+  # actually refute that comment above, for some reason it's pushing :functional first instead of :oo according to the error. I'm not sure why tho
   new_hash[:javascript][:style].push(:oo)
   new_hash
 end
