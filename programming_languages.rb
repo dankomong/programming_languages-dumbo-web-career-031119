@@ -10,6 +10,6 @@ def reformat_languages(languages)
     end
   end
   # for javascript, it will only push :oo so we will have to push :functional at the end
-  new_hash[:javascript][:style].push(:functional)
+  new_hash[:javascript][:style].push(:oo)
   new_hash
 end
