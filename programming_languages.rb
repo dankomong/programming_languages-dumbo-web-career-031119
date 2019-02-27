@@ -7,7 +7,9 @@ def reformat_languages(languages)
       new_hash[spec] = info
       new_hash[spec][:style] = []
       new_hash[spec][:style].push(type)
-      if 
+      if spec == :javascript 
+        new_hash[spec][:style].push(:functional)
+      end
     end
   end
   new_hash
